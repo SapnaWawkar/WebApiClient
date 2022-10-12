@@ -1,0 +1,38 @@
+﻿<Window x:Class="WebApiClient.AddCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebApiClient"
+        mc:Ignorable="d"
+        Title="AddCustomer" Height="450" Width="800">
+    <Grid >
+        <StackPanel Margin="20 10" Background="GreenYellow" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="First Name             :"></Label>
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="Last Name              :"></Label>
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="Username               :"></Label>
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="Password                :"></Label>
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="Connection Status :"></Label>
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="Package Id              :"></Label>
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="Group Id                 :"></Label>
+                <Label Margin="0 5" Width="200" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Content="Area Id                    :"></Label>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <TextBox x:Name="Firstname" Margin="0 10" Width="230" Height="30" Background="White"></TextBox>
+                <TextBox x:Name="Lastname" Margin="0 5" Width="230" Height="30" Background="White"></TextBox>
+                <TextBox x:Name="Username" Margin="0 10" Width="230" Height="30" Background="White"></TextBox>
+                <TextBox x:Name="Password" Margin="0 10" Width="230" Height="30" Background="White"></TextBox>
+                <TextBox x:Name="Connectionstatus" Margin="0 5" Width="230" Height="30" Background="White"></TextBox>
+                <TextBox x:Name="Packageid" Margin="0 10" Width="230" Height="30" Background="White"></TextBox>
+                <TextBox x:Name="groupid" Margin="0 10" Width="230" Height="30" Background="White"></TextBox>
+                <TextBox x:Name="Areaid" Margin="0 10" Width="230" Height="30" Background="White"></TextBox>
+            </StackPanel>
+            <StackPanel Height="60" Width="254">
+                <Button Width="138" Height="60" Click="Addcustomer" Content="Add" FontWeight="Bold" FontSize="20" Background="HotPink"/>
+            </StackPanel>
+
+
+        </StackPanel>
+    </Grid>
+</Window>

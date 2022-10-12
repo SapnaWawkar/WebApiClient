@@ -1,0 +1,38 @@
+﻿<Window x:Name="Packages1" x:Class="WebApiClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebApiClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="450" Width="800">
+        <StackPanel>
+            <StackPanel Height="200" VerticalAlignment="Top" Background="Bisque">
+                <StackPanel Orientation="Horizontal" Margin="10 10 10 10">
+                    <Label x:Name="Output" Height="30" FontWeight="Bold" FontSize="15" Width="170" HorizontalAlignment="Left" Margin="10">Enter Customer Name :</Label>
+                    <TextBox x:Name="txtCustomerName" Margin="10" Text="" TextWrapping="Wrap" TextAlignment="Center" Width="120" Height="30" FontWeight="Bold" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ListBox x:Name="Packages" Margin="10" FontWeight="Bold" FontSize="10" Height="100" Width="190" Background="#FFE58D8D" SelectionMode="Multiple"/>
+                    
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Get Customer" Margin="10"  FontWeight="Bold" FontSize="15" Click="GetCustomer" Height="30" Width="110"/>
+                    <Button Content="Add Customer" Margin="10"  FontWeight="Bold" FontSize="15" Click="AddCustomer" Height="30" Width="110"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <DataGrid Background="AliceBlue" Height="250" x:Name="lstbxPackages">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn FontSize="15" FontWeight="Bold" Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
+                        <DataGridTextColumn FontSize="15" FontWeight="Bold" Header="Name" Binding="{Binding Name}"></DataGridTextColumn>
+                        <DataGridTextColumn FontSize="15" FontWeight="Bold" Header="Package" Binding="{Binding Package}"></DataGridTextColumn>
+                        <DataGridTextColumn FontSize="15" FontWeight="Bold" Header="Group" Binding="{Binding Group}"></DataGridTextColumn>
+                        <DataGridTextColumn FontSize="15 " FontWeight="Bold" Header="Area" Binding="{Binding Area}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+        
+
+    </Grid>
+</Window>
